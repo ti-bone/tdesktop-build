@@ -131,7 +131,6 @@ jobs:
           mv Telegram.app artifact/
           mv Updater artifact/
       - uses: actions/upload-artifact@master
-        if: env.UPLOAD_ARTIFACT == 'true'
         name: Upload artifact.
         with:
           name: ${{ env.ARTIFACT_NAME }}
